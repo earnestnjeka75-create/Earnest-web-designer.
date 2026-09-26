@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Earnest Web Designer builds modern, mobile-friendly websites for businesses, schools and organisations in Kenya.">
+  <title>Earnest Web Designer | Websites That Work for You</title>
+  <style>
+    :root{--navy:#10243a;--blue:#1769e0;--teal:#13b89a;--ink:#172638;--muted:#637386;--light:#f4f8fc;--white:#fff}
+    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Inter,Arial,sans-serif;color:var(--ink);line-height:1.6;background:#fff}
+    a{text-decoration:none;color:inherit}.wrap{width:min(1120px,92%);margin:auto}
+    header{position:sticky;top:0;background:rgba(255,255,255,.96);backdrop-filter:blur(10px);z-index:10;border-bottom:1px solid #e8eef5}
+    .nav{height:72px;display:flex;align-items:center;justify-content:space-between;gap:20px}.logo{font-weight:800;font-size:1.15rem;color:var(--navy);letter-spacing:-.4px}.logo b{color:var(--blue)}
+    nav{display:flex;gap:25px;align-items:center;font-size:.94rem;color:#445468}nav a:hover{color:var(--blue)}
+    .btn{display:inline-flex;align-items:center;justify-content:center;padding:12px 18px;border-radius:10px;background:var(--blue);color:white;font-weight:700;border:0;cursor:pointer;transition:.2s}.btn:hover{transform:translateY(-2px);filter:brightness(.96)}.btn.secondary{background:#eaf2ff;color:var(--blue)}
+    .hero{background:radial-gradient(circle at 85% 20%,#dbeaff 0,transparent 30%),linear-gradient(120deg,#f6faff,#fff 60%);padding:78px 0 70px;overflow:hidden}
+    .hero-grid{display:grid;grid-template-columns:1.1fr .9fr;align-items:center;gap:50px}.eyebrow{display:inline-block;color:#1261cb;background:#e7f0ff;border-radius:50px;padding:6px 12px;font-weight:700;font-size:.82rem}
+    h1{font-size:clamp(2.5rem,5vw,4.5rem);line-height:1.06;letter-spacing:-2px;color:var(--navy);margin:18px 0}.hero p{font-size:1.1rem;color:var(--muted);max-width:560px;margin:0 0 26px}.hero-actions{display:flex;gap:12px;flex-wrap:wrap}
+    .visual{min-height:330px;position:relative;display:grid;place-items:center}.browser{width:100%;max-width:450px;background:white;border:1px solid #dce6f1;border-radius:16px;box-shadow:0 24px 60px #173b641a;overflow:hidden;transform:rotate(2deg)}
+    .browser-top{height:38px;background:#f0f4f8;display:flex;align-items:center;padding:0 14px;gap:6px}.dot{width:8px;height:8px;border-radius:50%;background:#c6d2df}.screen{padding:24px}.screenbar{height:10px;width:42%;background:#dce8f6;border-radius:8px;margin-bottom:20px}.screenhero{background:linear-gradient(120deg,#145fd0,#13b89a);height:120px;border-radius:10px;padding:18px;color:#fff;font-weight:800;font-size:1.25rem}.skeleton{height:9px;background:#e8eef5;border-radius:8px;margin-top:12px;width:80%}.skeleton.short{width:55%}.mini-cards{display:flex;gap:10px;margin-top:18px}.mini-cards span{height:48px;flex:1;background:#f0f5fb;border-radius:8px}.float{position:absolute;background:white;padding:13px 16px;border-radius:12px;box-shadow:0 12px 35px #173b6420;font-weight:700;color:var(--navy)}.float.one{right:-8px;top:18px}.float.two{left:-8px;bottom:12px;color:#087e6b}
+    section{padding:76px 0}.section-head{text-align:center;max-width:680px;margin:0 auto 36px}.section-head h2{font-size:clamp(1.8rem,3vw,2.6rem);letter-spacing:-1px;color:var(--navy);margin:0 0 10px}.section-head p{color:var(--muted);margin:0}
+    .cards{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.card{border:1px solid #e5edf5;border-radius:16px;padding:24px;background:white;box-shadow:0 8px 24px #173b6408}.icon{width:46px;height:46px;border-radius:12px;background:#eaf2ff;color:var(--blue);display:grid;place-items:center;font-size:1.3rem;margin-bottom:14px}.card h3{margin:0 0 7px;color:var(--navy)}.card p{margin:0;color:var(--muted);font-size:.96rem}
+    .why{background:var(--light)}.why-grid{display:grid;grid-template-columns:1fr 1fr;gap:45px;align-items:center}.why h2{font-size:2.4rem;line-height:1.15;color:var(--navy);margin:0 0 15px}.checks{display:grid;gap:13px;margin-top:22px}.checks div{display:flex;gap:10px;align-items:flex-start}.check{color:var(--teal);font-weight:900}
+    .steps{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.step{padding:22px;border-radius:14px;background:#f7faff}.num{font-size:.82rem;font-weight:800;color:var(--blue);letter-spacing:1px}
+    .portfolio{background:#fff}.portfolio-card{border-radius:15px;overflow:hidden;border:1px solid #e5edf5}.mock{height:150px;background:linear-gradient(135deg,#d9e9ff,#f0f7ff);display:grid;place-items:center;color:#245ca8;font-weight:800;font-size:1.2rem}.portfolio-card:nth-child(2) .mock{background:linear-gradient(135deg,#d5f7ee,#effdf9);color:#087e6b}.portfolio-card:nth-child(3) .mock{background:linear-gradient(135deg,#e9e5ff,#f8f6ff);color:#6652b5}.port-text{padding:18px}.port-text h3{margin:0 0 5px}.port-text p{margin:0;color:var(--muted);font-size:.92rem}
+    .cta{background:var(--navy);color:white;border-radius:22px;padding:42px;display:flex;justify-content:space-between;align-items:center;gap:25px}.cta h2{font-size:2rem;line-height:1.2;margin:0 0 8px}.cta p{color:#c6d3e2;margin:0}.cta .btn{background:var(--teal);white-space:nowrap}
+    .contact-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:35px}.contact-info{background:#f4f8fc;border-radius:16px;padding:25px}.contact-info p{color:var(--muted)}form{display:grid;gap:13px}label{font-weight:700;font-size:.9rem}input,select,textarea{width:100%;padding:13px 14px;border:1px solid #d8e2ec;border-radius:9px;font:inherit;background:white}textarea{min-height:110px;resize:vertical}.form-note{font-size:.82rem;color:var(--muted)}
+    footer{background:#0b1b2c;color:#c4d0dc;padding:28px 0;font-size:.9rem}.footer-row{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}.footer-row strong{color:white}
+    @media(max-width:800px){nav{display:none}.hero{padding:55px 0}.hero-grid,.why-grid,.contact-grid{grid-template-columns:1fr}.visual{min-height:270px}.cards,.steps{grid-template-columns:1fr 1fr}.cta{align-items:flex-start;flex-direction:column}}
+    @media(max-width:520px){.cards,.steps{grid-template-columns:1fr}.nav{height:64px}.hero-grid{gap:18px}.screen{padding:16px}.float.one{right:0}.float.two{left:0}.cta{padding:28px}.hero h1{letter-spacing:-1.2px}}
+  </style>
+</head>
+<body>
+<header>
+  <div class="wrap nav">
+    <a class="logo" href="#home">Jenga<b>Web</b> Studio</a>
+    <nav><a href="#services">Services</a><a href="#process">How it works</a><a href="#work">Our work</a><a href="#contact">Contact</a></nav>
+    <a class="btn" href="#contact">Get a quote</a>
+  </div>
+</header>
+<main>
+  <section class="hero" id="home">
+    <div class="wrap hero-grid">
+      <div>
+        <span class="eyebrow">Websites for Kenyan businesses</span>
+        <h1>Build your online presence. Grow your business.</h1>
+        <p>We design clean, mobile-friendly websites that help businesses look professional, reach more customers and make it easier for people to get in touch.</p>
+        <div class="hero-actions"><a class="btn" href="#contact">Start your website</a><a class="btn secondary" href="#services">Explore services</a></div>
+      </div>
+      <div class="visual" aria-label="Illustration of a website displayed in a browser window">
+        <div class="browser"><div class="browser-top"><i class="dot"></i><i class="dot"></i><i class="dot"></i></div><div class="screen"><div class="screenbar"></div><div class="screenhero">Your business,<br>beautifully online.</div><div class="skeleton"></div><div class="skeleton short"></div><div class="mini-cards"><span></span><span></span><span></span></div></div></div>
+        <div class="float one">✓ Mobile-friendly</div><div class="float two">✦ Made for your goals</div>
+      </div>
+    </div>
+  </section>
+  <section id="services">
+    <div class="wrap"><div class="section-head"><h2>What we can build for you</h2><p>Practical web solutions for small businesses, growing teams and organisations.</p></div>
+      <div class="cards">
+        <article class="card"><div class="icon">▣</div><h3>Business websites</h3><p>Introduce your company, explain your services and help customers contact you.</p></article>
+        <article class="card"><div class="icon">▤</div><h3>Online stores</h3><p>Showcase products, organise categories and guide customers to order or enquire.</p></article>
+        <article class="card"><div class="icon">▦</div><h3>School & organisation sites</h3><p>Share admissions information, announcements, programmes and contact details.</p></article>
+        <article class="card"><div class="icon">✎</div><h3>Website redesign</h3><p>Refresh an old website with a clearer layout and a smoother mobile experience.</p></article>
+        <article class="card"><div class="icon">⌁</div><h3>Domain & hosting setup</h3><p>Get help connecting a domain name and hosting your finished website online.</p></article>
+        <article class="card"><div class="icon">⚙</div><h3>Maintenance & updates</h3><p>Keep your pages, contact details and basic website content up to date.</p></article>
+      </div>
+    </div>
+  </section>
+  <section class="why">
+    <div class="wrap why-grid">
+      <div><span class="eyebrow">Why work with us</span><h2>A clear process, from idea to launch.</h2><p style="color:var(--muted)">Your website should be easy to use and easy to understand. We’ll agree on the pages, content, timeline and cost before work begins.</p>
+        <div class="checks"><div><span class="check">✓</span><span>Responsive layout for phones, tablets and computers</span></div><div><span class="check">✓</span><span>Simple navigation and clear calls to action</span></div><div><span class="check">✓</span><span>Direct contact options, including WhatsApp</span></div><div><span class="check">✓</span><span>Transparent scope and agreed project milestones</span></div></div>
+      </div>
+      <div class="card"><h3>Designed around your business</h3><p>We start by understanding what your customers need to know, then shape the pages around your goals.</p><div class="skeleton" style="height:12px;width:100%;margin-top:25px"></div><div class="skeleton" style="height:12px;width:88%"></div><div class="skeleton" style="height:12px;width:72%"></div><div style="background:#eaf2ff;color:#1769e0;font-weight:700;padding:14px;border-radius:9px;margin-top:24px">Plan • Design • Build • Launch</div></div>
+    </div>
+  </section>
+  <section id="process">
+    <div class="wrap"><div class="section-head"><h2>How it works</h2><p>Four straightforward steps to get your website online.</p></div>
+      <div class="steps"><div class="step"><div class="num">STEP 01</div><h3>Tell us your idea</h3><p>Share your business, audience and what you want the website to do.</p></div><div class="step"><div class="num">STEP 02</div><h3>Get a proposal</h3><p>We outline pages, features, timeline and a quotation for your approval.</p></div><div class="step"><div class="num">STEP 03</div><h3>Design & build</h3><p>We create the site and share progress for your feedback.</p></div><div class="step"><div class="num">STEP 04</div><h3>Review & launch</h3><p>After final checks and agreed payment, we publish your website.</p></div></div>
+    </div>
+  </section>
+  <section class="portfolio" id="work">
+    <div class="wrap"><div class="section-head"><h2>Website concepts</h2><p>Example project types to show the kind of sites we can create. Replace these with real client work as your portfolio grows.</p></div>
+      <div class="cards"><article class="portfolio-card"><div class="mock">Business website</div><div class="port-text"><h3>Company profile</h3><p>Services, about us, testimonials and enquiry form.</p></div></article><article class="portfolio-card"><div class="mock">Online shop</div><div class="port-text"><h3>Product catalogue</h3><p>Product listings and a simple order enquiry journey.</p></div></article><article class="portfolio-card"><div class="mock">School website</div><div class="port-text"><h3>School information</h3><p>Admissions, school news, programmes and contacts.</p></div></article></div>
+    </div>
+  </section>
+  <section>
+    <div class="wrap"><div class="cta"><div><h2>Ready to take your business online?</h2><p>Tell us what you need and request a no-obligation quotation.</p></div><a class="btn" href="#contact">Request a quote →</a></div></div>
+  </section>
+  <section id="contact">
+    <div class="wrap"><div class="section-head"><h2>Let’s talk about your website</h2><p>Fill in the form and it will open a WhatsApp message to our business number.</p></div>
+      <div class="contact-grid"><div class="contact-info"><h3>Contact Earnest Web Designer</h3><p>Have a question or a project in mind? Reach out and let’s discuss the details.</p><p><strong>WhatsApp:</strong><br>+254 713 834 153</p><p><strong>Service area:</strong><br>Kenya • Remote projects welcome</p><a class="btn" href="https://wa.me/254713834153" target="_blank" rel="noopener">Chat on WhatsApp</a></div>
+        <form id="quoteForm"><div><label for="customer">Your name</label><input id="customer" name="customer" required placeholder="Enter your name"></div><div><label for="service">What do you need?</label><select id="service" name="service" required><option value="">Choose a service</option><option>Business website</option><option>Online store</option><option>School or organisation website</option><option>Website redesign</option><option>Domain and hosting setup</option><option>Maintenance and updates</option><option>Not sure yet</option></select></div><div><label for="details">A few project details</label><textarea id="details" name="details" placeholder="Tell us about your business and what you need"></textarea></div><button class="btn" type="submit">Send enquiry on WhatsApp</button><p class="form-note">This form opens WhatsApp with your details. It does not store or submit information to a server.</p></form>
+      </div>
+    </div>
+  </section>
+</main>
+<footer><div class="wrap footer-row"><div><strong>Earnest Web Designer</strong><br>Websites that work for you.</div><div>© <span id="year">2026</span> Earnest Web Designer. All rights reserved.</div></div></footer>
+<script>
+  document.getElementById('quoteForm').addEventListener('submit',function(e){
+    e.preventDefault();
+    const name=document.getElementById('customer').value.trim();
+    const service=document.getElementById('service').value;
+    const details=document.getElementById('details').value.trim();
+    const message=`Hello Earnest Web Designer, my name is ${name}. I am interested in: ${service}.${details ? '\nProject details: '+details : ''} Please share a quotation.`;
+    window.open('https://wa.me/254713834153?text='+encodeURIComponent(message),'_blank','noopener');
+  });
+</script>
+</body>
+</html>
